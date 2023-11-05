@@ -1,0 +1,78 @@
+
+Árvore 1 (Lista1: 45, 20, 30, 60, 81, 97, 100, 7, 8, 4):
+```
+        45
+       /  \
+     20    60
+    / \   /  \
+   7   30    81
+      /      / \
+     8     97  100
+             
+
+Árvore 2 (Lista2: 15, 6, 18, 3, 7, 16, 20, 4):
+```
+        15
+       /  \
+      6    18
+     /    /  \
+    3    16   20
+     \
+      7
+      
+
+Para a Árvore 1 (Lista1), vou adicionar o valor 25 e, em seguida, remover o nó com o valor 20 (um nó com dois filhos).
+
+Após a adição do valor 25:
+```
+        45
+       /  \
+     25    60
+    / \   /  \
+   7   30    81
+      /      / \
+     8     97  100
+```
+
+Após a remoção do nó 20 (um nó com dois filhos):
+```
+        45
+       /  \
+     25    60
+    /      /  \
+   7     30    81
+      /      / \
+     8     97  100
+```
+
+Observe que o nó 20 foi removido e substituído pelo nó 25, mantendo a propriedade da árvore binária.
+
+Para a Árvore 2 (Lista2), vou adicionar o valor 12 e, em seguida, remover o nó com o valor 6 (um nó com dois filhos).
+
+Após a adição do valor 12:
+```
+        15
+       /  \
+      6    18
+     /    /  \
+    3    16   20
+     \
+      7
+     /
+   12
+```
+
+Após a remoção do nó 6 (um nó com dois filhos):
+```
+        15
+       /  \
+      7    18
+     /        \
+    3         20
+     \
+      12
+      /
+    16
+```
+
+Neste caso, o nó 6 foi removido e substituído pelo nó 7, mantendo a propriedade da árvore binária.
