@@ -1,0 +1,149 @@
+**1. Metadados (`<head>`):**
+
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Exemplo de Metadados</title>
+  <meta name="description" content="Uma breve descrição da página.">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <!-- Conteúdo da página -->
+</body>
+</html>
+```
+
+**2. Metadados para SEO:**
+
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Minha Página - SEO</title>
+  <meta name="description" content="Uma página otimizada para motores de busca.">
+  <meta name="keywords" content="HTML, SEO, Web Development">
+  <meta name="author" content="Seu Nome">
+  <link rel="canonical" href="https://www.exemplo.com/minha-pagina">
+</head>
+<body>
+  <!-- Conteúdo da página -->
+</body>
+</html>
+```
+
+**3. Separação de Conteúdo (`<div>`):**
+
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Exemplo de Separação de Conteúdo</title>
+</head>
+<body>
+  <header>
+    <h1>Meu Site</h1>
+    <nav>
+      <ul>
+        <li><a href="#">Página Inicial</a></li>
+        <li><a href="#">Sobre Nós</a></li>
+        <li><a href="#">Contato</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section>
+      <h2>Notícias Recentes</h2>
+      <!-- Conteúdo das notícias -->
+    </section>
+
+    <section>
+      <h2>Eventos</h2>
+      <!-- Conteúdo dos eventos -->
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2023 Meu Site. Todos os direitos reservados.</p>
+  </footer>
+</body>
+</html>
+```
+
+**4. Texto (`<p>`, `<h1>`):**
+
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Exemplo de Texto</title>
+</head>
+<body>
+  <h1>Título Principal</h1>
+  <p>Este é um exemplo de parágrafo em HTML. Pode conter <strong>texto formatado</strong> e links: <a href="#">clique aqui</a>.</p>
+</body>
+</html>
+```
+
+**5. Imagem (`<img>`):**
+
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Exemplo de Imagem</title>
+</head>
+<body>
+  <h1>Minha Imagem</h1>
+  <img src="imagem.jpg" alt="Descrição da imagem">
+</body>
+</html>
+```
+
+**6. Formulário (`<form>`, `<input>`, `<textarea>`, `<select>`):**
+
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Exemplo de Formulário</title>
+</head>
+<body>
+  <h1>Formulário de Contato</h1>
+  <form action="/enviar" method="post">
+    <label for="nome">Nome:</label>
+    <input type="text" id="nome" name="nome" required>
+
+    <label for="email">Email:</label>
+    <input type="email" id="email" name="email" required>
+
+    <label for="mensagem">Mensagem:</label>
+    <textarea id="mensagem" name="mensagem" rows="4" required></textarea>
+
+    <label for="interesse">Selecione seu interesse:</label>
+    <select id="interesse" name="interesse">
+      <option value="geral">Geral</option>
+      <option value="suporte">Suporte Técnico</option>
+      <option value="parceria">Parceria Comercial</option>
+    </select>
+
+    <button type="submit">Enviar</button>
+  </form>
+</body>
+</html>
+```
+
+Estes são exemplos básicos de utilização das tags HTML. Você pode adaptar conforme necessário para o conteúdo específico do seu projeto.
