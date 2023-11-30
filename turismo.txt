@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Lugares Turísticos da Europa</title>
+  <style>
+    body {
+      font-family: 'Arial', sans-serif;
+      line-height: 1.6;
+      margin: 0;
+      padding: 0;
+      background-color: #f4f4f4;
+    }
+
+    header {
+      background-color: #333;
+      color: #fff;
+      text-align: center;
+      padding: 1em;
+    }
+
+    section {
+      max-width: 800px;
+      margin: 0 auto;
+      padding: 20px;
+    }
+
+    .card {
+      border: 1px solid #ddd;
+      border-radius: 8px;
+      overflow: hidden;
+      margin: 20px 0;
+      background-color: #fff;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+
+    .card img {
+      width: 100%;
+      height: 200px;
+      object-fit: cover;
+    }
+
+    .card-content {
+      padding: 15px;
+    }
+
+    h2 {
+      color: #333;
+    }
+
+    p {
+      color: #555;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Lugares Turísticos da Europa</h1>
+  </header>
+
+  <section>
+    <div class="card">
+      <img src="paris.jpg" alt="Torre Eiffel, Paris">
+      <div class="card-content">
+        <h2>Paris, França</h2>
+        <p>Conheça a Cidade Luz, famosa pela Torre Eiffel, Museu do Louvre e pela rica cultura.</p>
+      </div>
+    </div>
+
+    <div class="card">
+      <img src="santorini.jpg" alt="Santorini, Grécia">
+      <div class="card-content">
+        <h2>Santorini, Grécia</h2>
+        <p>Explore as belas praias e as icônicas casas brancas com vista para o mar Egeu.</p>
+      </div>
+    </div>
+
+    <div class="card">
+      <img src="rome.jpg" alt="Coliseu, Roma">
+      <div class="card-content">
+        <h2>Roma, Itália</h2>
+        <p>Descubra a história antiga visitando o Coliseu, o Fórum Romano e a Fonte de Trevi.</p>
+      </div>
+    </div>
+
+    <!-- Adicione mais cards para outros lugares turísticos -->
+  </section>
+</body>
+</html>
