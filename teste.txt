@@ -1,0 +1,40 @@
+
+**src/utils/mensagem.js:**
+
+```javascript
+// src/utils/mensagem.js
+
+const obterMensagem = () => {
+  return "Bem-vindo à minha página React!";
+};
+
+export default obterMensagem;
+```
+
+Em seguida, para utilizar essa função no componente `App`, podemos importá-la no arquivo `src/App.js` e chamá-la dentro do componente.
+
+**src/App.js:**
+
+```jsx
+// src/App.js
+
+import React from 'react';
+import './App.css';
+import obterMensagem from './utils/mensagem';
+
+function App() {
+  return (
+    <div className="App">
+      <header className="App-header">
+        <h1>{obterMensagem()}</h1>
+      </header>
+    </div>
+  );
+}
+
+export default App;
+```
+
+Agora, ao acessar http://localhost:3000/, a mensagem definida na função em `mensagem.js` será exibida.
+
+Lembre-se de salvar os arquivos e reiniciar o servidor de desenvolvimento com `npm start`. Depois, você pode anexar os arquivos modificados na atividade.
