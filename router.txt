@@ -1,0 +1,78 @@
+
+```bash
+npm install react-router-dom
+```
+
+A seguir, vou fornecer um exemplo básico de como você pode configurar um roteador e criar diferentes telas.
+
+```jsx
+// src/App.js
+
+import React from 'react';
+import { BrowserRouter as Router, Route, Link } from 'react-router-dom';
+import TelaInicio from './TelaInicio';
+import TelaSobre from './TelaSobre';
+
+const App = () => {
+  return (
+    <Router>
+      <div>
+        <nav>
+          <ul>
+            <li>
+              <Link to="/">Início</Link>
+            </li>
+            <li>
+              <Link to="/sobre">Sobre</Link>
+            </li>
+          </ul>
+        </nav>
+
+        <hr />
+
+        <Route path="/" exact component={TelaInicio} />
+        <Route path="/sobre" component={TelaSobre} />
+      </div>
+    </Router>
+  );
+};
+
+export default App;
+```
+
+Agora, você precisa criar os componentes `TelaInicio` e `TelaSobre`.
+
+```jsx
+// src/TelaInicio.js
+
+import React from 'react';
+
+const TelaInicio = () => {
+  return (
+    <div>
+      <h2>Tela de Início</h2>
+      <p>Bem-vindo à tela de início!</p>
+    </div>
+  );
+};
+
+export default TelaInicio;
+```
+
+```jsx
+// src/TelaSobre.js
+
+import React from 'react';
+
+const TelaSobre = () => {
+  return (
+    <div>
+      <h2>Tela Sobre</h2>
+      <p>Esta é a tela sobre nós.</p>
+    </div>
+  );
+};
+
+export default TelaSobre;
+```
+
