@@ -1,0 +1,46 @@
+
+```jsx
+// src/MeuComponente.js
+
+import React, { useState } from 'react';
+
+const MeuComponente = () => {
+  const [contador, setContador] = useState(0);
+
+  const aumentarContador = () => {
+    setContador(contador + 1);
+  };
+
+  return (
+    <div>
+      <h1>Contador: {contador}</h1>
+      <button onClick={aumentarContador}>Aumentar Contador</button>
+    </div>
+  );
+};
+
+export default MeuComponente;
+```
+
+Neste exemplo, `useState` é usado para criar um estado chamado `contador`. `setContador` é a função que permite modificar esse estado. O botão chama a função `aumentarContador` quando é clicado, incrementando o valor de `contador`.
+
+Em seu arquivo principal, como `src/App.js`, você pode renderizar o componente da seguinte forma:
+
+```jsx
+// src/App.js
+
+import React from 'react';
+import MeuComponente from './MeuComponente';
+
+function App() {
+  return (
+    <div className="App">
+      <MeuComponente />
+    </div>
+  );
+}
+
+export default App;
+```
+
+Certifique-se de adaptar isso conforme necessário ao seu projeto específico. Lembre-se de incluir esses arquivos modificados ao anexar o código à atividade.
